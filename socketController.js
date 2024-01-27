@@ -401,7 +401,7 @@ function setupSocket(io) {
               "RoomChat",
               {
                 sender: "Server",
-                message: `${result.winner} WON vs ${result.scores[1].playerName}! `,
+                message: `${result.winner} WON vs ${result.scores[1].playerName}!💪😎 `,
                 date: new Date(),
               },
               roomid
@@ -409,7 +409,7 @@ function setupSocket(io) {
           }
           io.emit("GlobalChat", {
             sender: "Server",
-            message: `${result.winner} WON vs ${result.scores[1].playerName}! `,
+            message: `${result.winner} WON vs ${result.scores[1].playerName}!💪😎`,
             date: new Date(),
           });
         } else {
@@ -418,7 +418,7 @@ function setupSocket(io) {
               "RoomChat",
               {
                 sender: "Server",
-                message: `${result.winner} WON! `,
+                message: `${result.winner} WON!💪😎 `,
                 date: new Date(),
               },
               roomid
@@ -428,7 +428,7 @@ function setupSocket(io) {
           socket.id === roomid &&
             io.emit("GlobalChat", {
               sender: "Server",
-              message: `${result.winner} WON! `,
+              message: `${result.winner} WON!💪😎`,
               date: new Date(),
             });
         }
