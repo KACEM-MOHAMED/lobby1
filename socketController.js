@@ -1,50 +1,9 @@
-/* current datastructures 
-
-connectedPlayers={ xmO9AW6BH9AssKgEAAAB: 'A', '0orzW8Nyk8ebE1tuAAAD': 'B' }
-
-connectedPlayers={ player_socketId: username} 
-
-rooms={
-  xmO9AW6BH9AssKgEAAAB: {
-    id: 'xmO9AW6BH9AssKgEAAAB',
-    roomName: "A's Room",
-    host: 'xmO9AW6BH9AssKgEAAAB',
-    hostUsername: 'A',
-    players: [ 'xmO9AW6BH9AssKgEAAAB', '0orzW8Nyk8ebE1tuAAAD' ],
-    createdAt: 2024-01-17T20:01:17.512Z,
-    size: 2
-  }
-}
-rooms={
-    roomid: {
-        id: roomid,
-        roomName: roomName,
-        host: host,
-        hostUsername: hostUsername,
-        players: [ {
-      playerid: 'Owk7iV9cGIU6GsH9AAAB',
-      playerName: 'A',
-      isReady: false
-    }] ,
-        createdAt: createdAt,
-        size: size,
-        full: boolean,
-        state: [waiting , playing],
-        }
-    }
-}
-games={
-  roomid:{
-    isReady: false
-  }
-}
-
-*/
-// ANSI escape codes for text formatting , console.log
+const fs = require("fs");
 
 let connectedPlayers = {};
 let rooms = {};
 let games = {};
+
 function setupSocket(io) {
   io.on("connection", (socket) => {
     const username = socket.handshake.query.username;
@@ -339,6 +298,8 @@ function setupSocket(io) {
             currentCountryIndex: 0,
             scores: {},
           },
+          timer: 10,
+          isTimeoutProcessing: false,
         };
         for (let player of room.players) {
           games[roomid].gameState.scores[player.playerid] = 0; // Initialize scores to zero
@@ -363,112 +324,132 @@ function setupSocket(io) {
       gameState.gameState.scores[socket.id] += 10;
       gameStateScores = gameState.gameState.scores;
       const playerIds = Object.keys(gameStateScores);
-      if (gameState.gameState.currentCountryIndex < 3) {
-        gameState.gameState.currentCountryIndex++;
-        for (const socketId of playerIds) {
-          io.to(socketId).emit("gameState", gameState);
-        }
-      } else {
-        // Find the player with the highest score
-        const highestScore = Math.max(
-          ...playerIds.map((playerId) => gameStateScores[playerId] || 0)
-        );
-        // Find all players with the highest score (could be multiple in case of a draw)
-        const winners = playerIds.filter(
-          (playerId) => gameStateScores[playerId] === highestScore
-        );
-        console.log("********Winners*****");
-        console.log(winners);
-        let result = "No Result";
-        if (winners.length === 1) {
-          // Single winner
-          result = {
-            type: "win",
-            winner: connectedPlayers[winners[0]],
-            scores: playerIds
-              .sort((a, b) => gameStateScores[b] - gameStateScores[a])
-              .map((playerId) => ({
-                playerName: connectedPlayers[playerId],
-                score: gameStateScores[playerId] || 0,
-              })),
-          };
-        } else {
-          // Draw
-          result = {
-            type: "draw",
-            winners: winners.map((playerId) => connectedPlayers[playerId]),
-            scores: playerIds
-              .sort((a, b) => gameStateScores[b] - gameStateScores[a])
-              .map((playerId) => ({
-                playerName: connectedPlayers[playerId],
-                score: gameStateScores[playerId] || 0,
-              })),
-          };
-        }
-        console.log(
-          "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-        );
-        console.log(result);
-        gameState.gameInProgress = false;
-        for (const socketId of playerIds) {
-          io.to(socketId).emit("gameResult", result);
-        }
-        if (result.type === "win") {
-          if (playerIds.length === 2) {
-            for (const socketId of playerIds) {
-              io.to(socketId).emit(
-                "RoomChat",
-                {
-                  sender: "Server",
-                  message: `${result.winner} WON vs ${result.scores[1].playerName}! `,
-                  date: new Date(),
-                },
-                roomid
-              );
-            }
-            io.emit("GlobalChat", {
-              sender: "Server",
-              message: `${result.winner} WON vs ${result.scores[1].playerName}! `,
-              date: new Date(),
-            });
-          } else {
-            for (const socketId of playerIds) {
-              io.to(socketId).emit(
-                "RoomChat",
-                {
-                  sender: "Server",
-                  message: `${result.winner} WON! `,
-                  date: new Date(),
-                },
-                roomid
-              );
-            }
+      handleNextIndexLogic(gameState, playerIds, roomid, socket);
+    });
 
-            socket.id === roomid &&
-              io.emit("GlobalChat", {
-                sender: "Server",
-                message: `${result.winner} WON! `,
-                date: new Date(),
-              });
-          }
-        }
-        //delete room and game here
-        if (games && games[roomid]) {
-          delete games[roomid];
-        }
-        if (rooms && rooms[roomid]) {
-          delete rooms[roomid];
-          io.emit("rooms", Object.values(rooms));
-        }
+    socket.on("timeout", (roomid) => {
+      const gameState = games[roomid];
+      console.log("++++TIMEOUT REQUEST++++");
+      gameState && console.log(gameState.isTimeoutProcessing);
+      if (gameState && !gameState.isTimeoutProcessing) {
+        gameState.isTimeoutProcessing = true;
+        gameStateScores = gameState.gameState.scores;
+        const playerIds = Object.keys(gameStateScores);
+        handleNextIndexLogic(gameState, playerIds, roomid, socket);
+        // Release the lock after handling the timeout
+        setTimeout(() => {
+          gameState.isTimeoutProcessing = false;
+        }, 1000);
       }
     });
   });
+
+  function handleNextIndexLogic(gameState, playerIds, roomid, socket) {
+    if (gameState.gameState.currentCountryIndex < 9) {
+      gameState.gameState.currentCountryIndex++;
+      for (const socketId of playerIds) {
+        io.to(socketId).emit("gameState", gameState);
+      }
+    } else {
+      // Find the player with the highest score
+      const highestScore = Math.max(
+        ...playerIds.map((playerId) => gameStateScores[playerId] || 0)
+      );
+      // Find all players with the highest score (could be multiple in case of a draw)
+      const winners = playerIds.filter(
+        (playerId) => gameStateScores[playerId] === highestScore
+      );
+      console.log("********Winners*****");
+      console.log(winners);
+      let result = "No Result";
+      if (winners.length === 1) {
+        // Single winner
+        result = {
+          type: "win",
+          winnerid: winners[0],
+          winner: connectedPlayers[winners[0]],
+          scores: playerIds
+            .sort((a, b) => gameStateScores[b] - gameStateScores[a])
+            .map((playerId) => ({
+              playerName: connectedPlayers[playerId],
+              score: gameStateScores[playerId] || 0,
+            })),
+        };
+      } else {
+        // Draw
+        result = {
+          type: "draw",
+          winners: winners.map((playerId) => connectedPlayers[playerId]),
+          scores: playerIds
+            .sort((a, b) => gameStateScores[b] - gameStateScores[a])
+            .map((playerId) => ({
+              playerName: connectedPlayers[playerId],
+              score: gameStateScores[playerId] || 0,
+            })),
+        };
+      }
+      console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+      console.log(result);
+      gameState.gameInProgress = false;
+      for (const socketId of playerIds) {
+        io.to(socketId).emit("gameResult", result);
+      }
+      if (result.type === "win") {
+        if (playerIds.length === 2) {
+          for (const socketId of playerIds) {
+            io.to(socketId).emit(
+              "RoomChat",
+              {
+                sender: "Server",
+                message: `${result.winner} WON vs ${result.scores[1].playerName}! `,
+                date: new Date(),
+              },
+              roomid
+            );
+          }
+          io.emit("GlobalChat", {
+            sender: "Server",
+            message: `${result.winner} WON vs ${result.scores[1].playerName}! `,
+            date: new Date(),
+          });
+        } else {
+          for (const socketId of playerIds) {
+            io.to(socketId).emit(
+              "RoomChat",
+              {
+                sender: "Server",
+                message: `${result.winner} WON! `,
+                date: new Date(),
+              },
+              roomid
+            );
+          }
+
+          socket.id === roomid &&
+            io.emit("GlobalChat", {
+              sender: "Server",
+              message: `${result.winner} WON! `,
+              date: new Date(),
+            });
+        }
+      }
+      //delete room and game here
+      if (games && games[roomid]) {
+        delete games[roomid];
+      }
+      if (rooms && rooms[roomid]) {
+        delete rooms[roomid];
+        io.emit("rooms", Object.values(rooms));
+      }
+    }
+  }
 }
 
 // Validate function to check if the username is valid
 function isValidUsername(username) {
   return username && username.trim() !== "";
 }
+
 function updateRoomIsFull(roomId) {
   console.log("here");
   const originalRoom = rooms[roomId];
@@ -485,20 +466,38 @@ function updateRoomIsFull(roomId) {
   }
 }
 
-function getCountriesData() {
-  const data = [
-    { country: "ITALY", hints: ["in europe", "has green in it"] },
-    { country: "GERMANY", hints: ["in europe", "Best cars"] },
-    { country: "FRANCE", hints: ["in europe", "trash"] },
-    { country: "ITALY", hints: ["in europe", "has green in it"] },
-    { country: "GERMANY", hints: ["in europe", "Best cars"] },
-    { country: "FRANCE", hints: ["in europe", "trash"] },
-    { country: "ITALY", hints: ["in europe", "has green in it"] },
-    { country: "GERMANY", hints: ["in europe", "Best cars"] },
-    { country: "FRANCE", hints: ["in europe", "trash"] },
-    { country: "FRANCE", hints: ["in europe", "trash"] },
-    { country: "ended", hints: ["in europe", "Best cars"] },
-  ];
-  return data;
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
+
+function getCountriesData() {
+  // Read the contents of the data.json file
+  const rawData = fs.readFileSync("data.json");
+
+  // Parse the JSON data
+  const data = JSON.parse(rawData);
+
+  // Select 10 random elements from the data
+  const randomElements = [];
+  while (randomElements.length < 10) {
+    const randomIndex = getRandomInt(data.length);
+    randomElements.push(data[randomIndex]);
+  }
+
+  // Modify each element to include only 5 random hints
+  const result = randomElements.map((element) => {
+    const randomHints = [];
+    while (randomHints.length < 5 && element.hints.length > 0) {
+      const randomHintIndex = getRandomInt(element.hints.length);
+      randomHints.push(element.hints.splice(randomHintIndex, 1)[0]);
+    }
+
+    // Update the hints property with the selected random hints
+    element.hints = randomHints;
+    return element;
+  });
+
+  return result;
+}
+
 module.exports = { setupSocket };

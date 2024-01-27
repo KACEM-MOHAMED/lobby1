@@ -1,0 +1,4147 @@
+[
+  {
+    "country": "canada",
+    "hints": [
+      {
+        "text": "IN North America",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, French",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ca.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Canadian dollar ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Ottawa",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "japan",
+    "hints": [
+      {
+        "text": "IN Eastern Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Japanese",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/jp.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Japanese yen (\u00a5)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Tokyo",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nJ",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      }
+    ]
+  },
+  {
+    "country": "germany",
+    "hints": [
+      {
+        "text": "IN Western Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: German",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/de.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Berlin",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nY",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "switzerland",
+    "hints": [
+      {
+        "text": "IN Western Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: French, Swiss German, Italian",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ch.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Swiss franc (Fr.)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Bern",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nW",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nZ",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      }
+    ]
+  },
+  {
+    "country": "australia",
+    "hints": [
+      {
+        "text": "IN Australia and New Zealand",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/au.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Australian dollar ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Canberra",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      }
+    ]
+  },
+  {
+    "country": "united states",
+    "hints": [
+      {
+        "text": "IN Caribbean",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/vi.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: United States dollar ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Charlotte Amalie",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 11
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 12
+      }
+    ]
+  },
+  {
+    "country": "new zealand",
+    "hints": [
+      {
+        "text": "IN Australia and New Zealand",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, M\u0101ori, New Zealand Sign Language",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/nz.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: New Zealand dollar ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Wellington",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nW",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nZ",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      }
+    ]
+  },
+  {
+    "country": "united kingdom",
+    "hints": [
+      {
+        "text": "IN Northern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/gb.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: British pound (\u00a3)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is London",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nK",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 11
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 12
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 13
+      }
+    ]
+  },
+  {
+    "country": "sweden",
+    "hints": [
+      {
+        "text": "IN Northern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Swedish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/se.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Swedish krona (kr)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Stockholm",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nW",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "netherlands",
+    "hints": [
+      {
+        "text": "IN Western Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Dutch",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/nl.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Amsterdam",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      }
+    ]
+  },
+  {
+    "country": "norway",
+    "hints": [
+      {
+        "text": "IN Northern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Norwegian Nynorsk, Norwegian Bokm\u00e5l, Sami",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/no.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Norwegian krone (kr)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Oslo",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nW",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nY",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "denmark",
+    "hints": [
+      {
+        "text": "IN Northern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Danish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/dk.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Danish krone (kr)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Copenhagen",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nK",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "france",
+    "hints": [
+      {
+        "text": "IN Western Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: French",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/fr.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Paris",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nF",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "finland",
+    "hints": [
+      {
+        "text": "IN Northern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Finnish, Swedish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/fi.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Helsinki",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nF",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "italy",
+    "hints": [
+      {
+        "text": "IN Southern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Italian",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/it.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Rome",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nY",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      }
+    ]
+  },
+  {
+    "country": "spain",
+    "hints": [
+      {
+        "text": "IN Southern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Spanish, Catalan, Basque",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/es.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Madrid",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      }
+    ]
+  },
+  {
+    "country": "ireland",
+    "hints": [
+      {
+        "text": "IN Northern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, Irish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ie.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Dublin",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "singapore",
+    "hints": [
+      {
+        "text": "IN South-Eastern Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, Chinese, Malay",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/sg.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Singapore dollar ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Singapore",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      }
+    ]
+  },
+  {
+    "country": "china",
+    "hints": [
+      {
+        "text": "IN Eastern Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Portuguese, Chinese",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/mo.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Macanese pataca (P)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is ",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      }
+    ]
+  },
+  {
+    "country": "south korea",
+    "hints": [
+      {
+        "text": "IN Eastern Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Korean",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/kr.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: South Korean won (\u20a9)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Seoul",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nK",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      }
+    ]
+  },
+  {
+    "country": "austria",
+    "hints": [
+      {
+        "text": "IN Central Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: German",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/at.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Vienna",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "belgium",
+    "hints": [
+      {
+        "text": "IN Western Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: German, French, Dutch",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/be.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Brussels",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "united arab emirates",
+    "hints": [
+      {
+        "text": "IN Western Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Arabic",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ae.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: United Arab Emirates dirham (\u062f.\u0625)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Abu Dhabi",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 12
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 13
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 14
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 15
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 16
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 17
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 18
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 19
+      }
+    ]
+  },
+  {
+    "country": "portugal",
+    "hints": [
+      {
+        "text": "IN Southern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Portuguese",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/pt.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Lisbon",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      }
+    ]
+  },
+  {
+    "country": "greece",
+    "hints": [
+      {
+        "text": "IN Southern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Greek",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/gr.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Euro (\u20ac)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Athens",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "czech republic",
+    "hints": [
+      {
+        "text": "IN Central Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Czech, Slovak",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/cz.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Czech koruna (K\u010d)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Prague",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nZ",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 11
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 12
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 13
+      }
+    ]
+  },
+  {
+    "country": "poland",
+    "hints": [
+      {
+        "text": "IN Central Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Polish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/pl.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Polish z\u0142oty (z\u0142)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Warsaw",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "hungary",
+    "hints": [
+      {
+        "text": "IN Central Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Hungarian",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/hu.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Hungarian forint (Ft)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Budapest",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nY",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "malaysia",
+    "hints": [
+      {
+        "text": "IN South-Eastern Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, Malay",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/my.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Malaysian ringgit (RM)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Kuala Lumpur",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nY",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      }
+    ]
+  },
+  {
+    "country": "thailand",
+    "hints": [
+      {
+        "text": "IN South-Eastern Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Thai",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/th.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Thai baht (\u0e3f)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Bangkok",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      }
+    ]
+  },
+  {
+    "country": "mexico",
+    "hints": [
+      {
+        "text": "IN North America",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Spanish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/mx.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Mexican peso ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Mexico City",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nX",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "india",
+    "hints": [
+      {
+        "text": "IN Eastern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/io.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: United States dollar ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Diego Garcia",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      }
+    ]
+  },
+  {
+    "country": "russia",
+    "hints": [
+      {
+        "text": "IN Eastern Europe",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Russian",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ru.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Russian ruble (\u20bd)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Moscow",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "turkey",
+    "hints": [
+      {
+        "text": "IN Western Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Turkish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/tr.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Turkish lira (\u20ba)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Ankara",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nK",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nY",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "brazil",
+    "hints": [
+      {
+        "text": "IN South America",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Portuguese",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/br.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Brazilian real (R$)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Bras\u00edlia",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nZ",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "south africa",
+    "hints": [
+      {
+        "text": "IN Southern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Afrikaans, English, Southern Ndebele",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/za.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: South African rand (R)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Pretoria",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nF",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 11
+      }
+    ]
+  },
+  {
+    "country": "argentina",
+    "hints": [
+      {
+        "text": "IN South America",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Guaran\u00ed, Spanish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ar.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Argentine peso ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Buenos Aires",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      }
+    ]
+  },
+  {
+    "country": "indonesia",
+    "hints": [
+      {
+        "text": "IN South-Eastern Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Indonesian",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/id.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Indonesian rupiah (Rp)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Jakarta",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      }
+    ]
+  },
+  {
+    "country": "egypt",
+    "hints": [
+      {
+        "text": "IN Northern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Arabic",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/eg.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Egyptian pound (\u00a3)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Cairo",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nY",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      }
+    ]
+  },
+  {
+    "country": "morocco",
+    "hints": [
+      {
+        "text": "IN Northern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Arabic, Berber",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ma.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Moroccan dirham (\u062f.\u0645.)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Rabat",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "vietnam",
+    "hints": [
+      {
+        "text": "IN South-Eastern Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Vietnamese",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/vn.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Vietnamese \u0111\u1ed3ng (\u20ab)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Hanoi",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nV",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "peru",
+    "hints": [
+      {
+        "text": "IN South America",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Aymara, Quechua, Spanish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/pe.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Peruvian sol (S/ )",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Lima",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      }
+    ]
+  },
+  {
+    "country": "colombia",
+    "hints": [
+      {
+        "text": "IN South America",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Spanish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/co.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Colombian peso ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Bogot\u00e1",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      }
+    ]
+  },
+  {
+    "country": "philippines",
+    "hints": [
+      {
+        "text": "IN South-Eastern Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, Filipino",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ph.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Philippine peso (\u20b1)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Manila",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      }
+    ]
+  },
+  {
+    "country": "chile",
+    "hints": [
+      {
+        "text": "IN South America",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Spanish",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/cl.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Chilean peso ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Santiago",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      }
+    ]
+  },
+  {
+    "country": "saudi arabia",
+    "hints": [
+      {
+        "text": "IN Western Asia",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Arabic",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/sa.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Saudi riyal (\u0631.\u0633)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Riyadh",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 11
+      }
+    ]
+  },
+  {
+    "country": "kenya",
+    "hints": [
+      {
+        "text": "IN Eastern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, Swahili",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ke.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Kenyan shilling (Sh)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Nairobi",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nK",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nY",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      }
+    ]
+  },
+  {
+    "country": "tanzania",
+    "hints": [
+      {
+        "text": "IN Eastern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, Swahili",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/tz.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Tanzanian shilling (Sh)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Dodoma",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nZ",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      }
+    ]
+  },
+  {
+    "country": "nigeria",
+    "hints": [
+      {
+        "text": "IN Western Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ng.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Nigerian naira (\u20a6)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Abuja",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "algeria",
+    "hints": [
+      {
+        "text": "IN Northern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Arabic",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/dz.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Algerian dinar (\u062f.\u062c)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Algiers",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "ethiopia",
+    "hints": [
+      {
+        "text": "IN Eastern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Amharic",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/et.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Ethiopian birr (Br)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Addis Ababa",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      }
+    ]
+  },
+  {
+    "country": "zambia",
+    "hints": [
+      {
+        "text": "IN Eastern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/zm.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Zambian kwacha (ZK)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Lusaka",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nZ",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "zimbabwe",
+    "hints": [
+      {
+        "text": "IN Southern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Chibarwe, English, Kalanga",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/zw.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Zimbabwean dollar ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Harare",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nZ",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nW",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      }
+    ]
+  },
+  {
+    "country": "uganda",
+    "hints": [
+      {
+        "text": "IN Eastern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, Swahili",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ug.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Ugandan shilling (Sh)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Kampala",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "malawi",
+    "hints": [
+      {
+        "text": "IN Eastern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, Chewa",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/mw.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Malawian kwacha (MK)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Lilongwe",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nW",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "cameroon",
+    "hints": [
+      {
+        "text": "IN Middle Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English, French",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/cm.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Central African CFA franc (Fr)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Yaound\u00e9",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      }
+    ]
+  },
+  {
+    "country": "democratic republic of the congo",
+    "hints": [
+      {
+        "text": "IN Middle Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: French, Kikongo, Lingala",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/cd.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Congolese franc (FC)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Kinshasa",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nD",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 11
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 12
+      },
+      {
+        "text": "Letter revealed!\nP",
+        "type": "reveal letter",
+        "revealedIndex": 13
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 14
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 15
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 16
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 17
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 18
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 20
+      },
+      {
+        "text": "Letter revealed!\nF",
+        "type": "reveal letter",
+        "revealedIndex": 21
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 23
+      },
+      {
+        "text": "Letter revealed!\nH",
+        "type": "reveal letter",
+        "revealedIndex": 24
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 25
+      },
+      {
+        "text": "Letter revealed!\nC",
+        "type": "reveal letter",
+        "revealedIndex": 27
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 28
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 29
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 30
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 31
+      }
+    ]
+  },
+  {
+    "country": "sierra leone",
+    "hints": [
+      {
+        "text": "IN Western Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/sl.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Sierra Leonean leone (Le)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Freetown",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nR",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 10
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 11
+      }
+    ]
+  },
+  {
+    "country": "mozambique",
+    "hints": [
+      {
+        "text": "IN Eastern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Portuguese",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/mz.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Mozambican metical (MT)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Maputo",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nZ",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      },
+      {
+        "text": "Letter revealed!\nQ",
+        "type": "reveal letter",
+        "revealedIndex": 7
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 8
+      },
+      {
+        "text": "Letter revealed!\nE",
+        "type": "reveal letter",
+        "revealedIndex": 9
+      }
+    ]
+  },
+  {
+    "country": "tunisia",
+    "hints": [
+      {
+        "text": "IN Northern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Arabic",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/tn.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Tunisian dinar (\u062f.\u062a)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Tunis",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nU",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nS",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  },
+  {
+    "country": "gambia",
+    "hints": [
+      {
+        "text": "IN Western Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: English",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/gm.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: dalasi (D)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Banjul",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "angola",
+    "hints": [
+      {
+        "text": "IN Middle Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Portuguese",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/ao.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Angolan kwanza (Kz)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Luanda",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nL",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      }
+    ]
+  },
+  {
+    "country": "togo",
+    "hints": [
+      {
+        "text": "IN Western Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: French",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/tg.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: West African CFA franc (Fr)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Lom\u00e9",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nT",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nG",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nO",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      }
+    ]
+  },
+  {
+    "country": "namibia",
+    "hints": [
+      {
+        "text": "IN Southern Africa",
+        "type": "text"
+      },
+      {
+        "text": "Languages: Afrikaans, German, English",
+        "type": "text"
+      },
+      {
+        "svg": "https://flagcdn.com/na.svg",
+        "type": "show flag"
+      },
+      {
+        "text": "Currency: Namibian dollar ($)",
+        "type": "text"
+      },
+      {
+        "text": "Capital City is Windhoek",
+        "type": "text"
+      },
+      {
+        "text": "Letter revealed!\nN",
+        "type": "reveal letter",
+        "revealedIndex": 0
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 1
+      },
+      {
+        "text": "Letter revealed!\nM",
+        "type": "reveal letter",
+        "revealedIndex": 2
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 3
+      },
+      {
+        "text": "Letter revealed!\nB",
+        "type": "reveal letter",
+        "revealedIndex": 4
+      },
+      {
+        "text": "Letter revealed!\nI",
+        "type": "reveal letter",
+        "revealedIndex": 5
+      },
+      {
+        "text": "Letter revealed!\nA",
+        "type": "reveal letter",
+        "revealedIndex": 6
+      }
+    ]
+  }
+]
