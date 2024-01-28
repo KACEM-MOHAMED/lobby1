@@ -471,33 +471,55 @@ function getRandomInt(max) {
 }
 
 function getCountriesData() {
-  // Read the contents of the data.json file
-  const rawData = fs.readFileSync("data.json");
+  try {
+    // Read the contents of the data.json file
+    const rawData = fs.readFileSync("data.json");
 
-  // Parse the JSON data
-  const data = JSON.parse(rawData);
+    // Parse the JSON data
+    const data = JSON.parse(rawData);
 
-  // Select 10 random elements from the data
-  const randomElements = [];
-  while (randomElements.length < 10) {
-    const randomIndex = getRandomInt(data.length);
-    randomElements.push(data[randomIndex]);
-  }
-
-  // Modify each element to include only 5 random hints
-  const result = randomElements.map((element) => {
-    const randomHints = [];
-    while (randomHints.length < 5 && element.hints.length > 0) {
-      const randomHintIndex = getRandomInt(element.hints.length);
-      randomHints.push(element.hints.splice(randomHintIndex, 1)[0]);
+    // Ensure there are enough elements in the data array
+    if (data.length < 10) {
+      throw new Error("Insufficient data elements");
     }
 
-    // Update the hints property with the selected random hints
-    element.hints = randomHints;
-    return element;
-  });
+    // Shuffle the data array to ensure randomness
+    for (let i = data.length - 1; i > 0; i--) {
+      const j = getRandomInt(i + 1);
+      [data[i], data[j]] = [data[j], data[i]];
+    }
 
-  return result;
+    // Select 10 random elements from the shuffled data
+    const randomElements = data.slice(0, 10);
+
+    // Modify each element to include only 5 random hints with the flag hint always as the 5th hint
+    const result = randomElements.map((element) => {
+      const randomHints = [];
+
+      // Add the first 4 hints
+      for (let i = 0; i < 4 && element.hints.length > 0; i++) {
+        const randomHintIndex = getRandomInt(element.hints.length);
+        randomHints.push(element.hints.splice(randomHintIndex, 1)[0]);
+      }
+
+      // Add the flag hint as the 5th hint if available
+      const flagHintIndex = element.hints.findIndex(
+        (hint) => hint.type === "show flag"
+      );
+      if (flagHintIndex !== -1) {
+        randomHints.push(element.hints.splice(flagHintIndex, 1)[0]);
+      }
+
+      // Update the hints property with the selected random hints
+      element.hints = randomHints;
+      return element;
+    });
+
+    return result;
+  } catch (error) {
+    console.error("Error reading or processing data:", error.message);
+    return null; // or handle the error in a way that makes sense for your application
+  }
 }
 
 module.exports = { setupSocket };
