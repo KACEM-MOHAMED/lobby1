@@ -3,6 +3,7 @@ const fs = require("fs");
 let connectedPlayers = {};
 let rooms = {};
 let games = {};
+const countryCount = 2;
 
 function setupSocket(io) {
   io.on("connection", (socket) => {
@@ -345,8 +346,7 @@ function setupSocket(io) {
   });
 
   function handleNextIndexLogic(gameState, playerIds, roomid, socket) {
-    //changevar
-    if (gameState.gameState.currentCountryIndex < 3) {
+    if (gameState.gameState.currentCountryIndex < countryCount) {
       gameState.gameState.currentCountryIndex++;
       for (const socketId of playerIds) {
         io.to(socketId).emit("gameState", gameState);
@@ -467,74 +467,74 @@ function updateRoomIsFull(roomId) {
   }
 }
 
+// A helper function to get a random integer between 0 and max (exclusive)
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
+// A helper function to check if an array contains a value
+function contains(array, value) {
+  return array.indexOf(value) !== -1;
+}
+
+// A helper function to get a random hint from an array of hints
+function getRandomHint(hints) {
+  // Filter out the show flag hints
+  const filteredHints = hints.filter((hint) => hint.type !== "show flag");
+  // Get a random index
+  const index = getRandomInt(filteredHints.length);
+  // Return the hint at that index
+  return filteredHints[index];
+}
+
+// The main function to get 10 countries and 5 hints for each country
 function getCountriesData() {
-  try {
-    // Read the contents of the data.json file
-    const rawData = fs.readFileSync("data.json");
-
-    // Parse the JSON data
-    const data = JSON.parse(rawData);
-
-    // Ensure there are enough elements in the data array
-    if (data.length < 10) {
-      throw new Error("Insufficient data elements");
+  const data = JSON.parse(fs.readFileSync("data.json", "utf8"));
+  // An array to store the selected countries data
+  const countriesData = [];
+  // A loop to select 10 countries
+  for (let i = 0; i < 10; i++) {
+    // Get a random index
+    let index = getRandomInt(data.length);
+    // Check if the country at that index is already selected
+    while (contains(countriesData, data[index])) {
+      // If yes, get another random index
+      index = getRandomInt(data.length);
     }
-
-    // Shuffle the data array to ensure randomness
-    for (let i = data.length - 1; i > 0; i--) {
-      const j = getRandomInt(i + 1);
-      [data[i], data[j]] = [data[j], data[i]];
+    // An array to store the hints for this country
+    const countryHints = [];
+    let hint = getRandomHint(data[index].hints);
+    while (hint.type === "reveal letter") {
+      // If yes, get another random hint
+      hint = getRandomHint(data[index].hints);
     }
-
-    // Select 10 random elements from the shuffled data
-    const randomElements = data.slice(0, 10);
-
-    // Modify each element to include only 5 random hints with the flag hint always as the 5th hint
-    const result = randomElements.map((element) => {
-      const randomHints = [];
-
-      // Exclude reveal letter hints from the first hint
-      const firstHintIndex = element.hints.findIndex(
-        (hint) => hint.type !== "reveal letter"
-      );
-
-      // Add the first hint (excluding reveal letter hints)
-      if (firstHintIndex !== -1) {
-        randomHints.push(element.hints.splice(firstHintIndex, 1)[0]);
-      } else if (element.hints.length > 0) {
-        // If no non-reveal letter hints are available, add a random hint
-        const randomHintIndex = getRandomInt(element.hints.length);
-        randomHints.push(element.hints.splice(randomHintIndex, 1)[0]);
+    countryHints.push(hint);
+    // A loop to select 3 hints for this country
+    for (let j = 1; j < 4; j++) {
+      // Get a random hint
+      let hint = getRandomHint(data[index].hints);
+      // Check if the hint is already selected
+      while (contains(countryHints, hint)) {
+        // If yes, get another random hint
+        hint = getRandomHint(data[index].hints);
       }
-
-      // Add the next 4 hints
-      for (let i = 0; i < 4 && element.hints.length > 0; i++) {
-        const randomHintIndex = getRandomInt(element.hints.length);
-        randomHints.push(element.hints.splice(randomHintIndex, 1)[0]);
-      }
-
-      // Add the flag hint as the 5th hint if available
-      const flagHintIndex = element.hints.findIndex(
-        (hint) => hint.type === "show flag"
-      );
-      if (flagHintIndex !== -1) {
-        randomHints.push(element.hints.splice(flagHintIndex, 1)[0]);
-      }
-
-      // Update the hints property with the selected random hints
-      element.hints = randomHints;
-      return element;
-    });
-
-    return result;
-  } catch (error) {
-    console.error("Error reading or processing data:", error.message);
-    return null; // or handle the error in a way that makes sense for your application
+      // Add the hint to the countryHints array
+      countryHints.push(hint);
+    }
+    // Add the show flag hint as the last hint
+    countryHints.push(
+      data[index].hints.find((hint) => hint.type === "show flag")
+    );
+    // Create an object with the country and hints keys
+    const countryData = {
+      country: data[index].country,
+      hints: countryHints,
+    };
+    // Add the countryData object to the countriesData array
+    countriesData.push(countryData);
   }
+  // Return the countriesData array
+  return countriesData;
 }
 
 module.exports = { setupSocket };
