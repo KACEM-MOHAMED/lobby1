@@ -3,7 +3,7 @@ const fs = require("fs");
 let connectedPlayers = {};
 let rooms = {};
 let games = {};
-const countryCount = 2;
+const countryCount = 1;
 
 function setupSocket(io) {
   io.on("connection", (socket) => {
