@@ -436,11 +436,11 @@ function setupSocket(io) {
       }
       //delete room and game here
       if (games && games[roomid]) {
-        delete games[roomid];
+       delete games[roomid];
       }
       if (rooms && rooms[roomid]) {
         delete rooms[roomid];
-        io.emit("rooms", Object.values(rooms));
+        //io.emit("rooms", Object.values(rooms));
       }
     }
   }
