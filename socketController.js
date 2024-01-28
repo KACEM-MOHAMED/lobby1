@@ -496,7 +496,21 @@ function getCountriesData() {
     const result = randomElements.map((element) => {
       const randomHints = [];
 
-      // Add the first 4 hints
+      // Exclude reveal letter hints from the first hint
+      const firstHintIndex = element.hints.findIndex(
+        (hint) => hint.type !== "reveal letter"
+      );
+
+      // Add the first hint (excluding reveal letter hints)
+      if (firstHintIndex !== -1) {
+        randomHints.push(element.hints.splice(firstHintIndex, 1)[0]);
+      } else if (element.hints.length > 0) {
+        // If no non-reveal letter hints are available, add a random hint
+        const randomHintIndex = getRandomInt(element.hints.length);
+        randomHints.push(element.hints.splice(randomHintIndex, 1)[0]);
+      }
+
+      // Add the next 4 hints
       for (let i = 0; i < 4 && element.hints.length > 0; i++) {
         const randomHintIndex = getRandomInt(element.hints.length);
         randomHints.push(element.hints.splice(randomHintIndex, 1)[0]);
