@@ -345,7 +345,8 @@ function setupSocket(io) {
   });
 
   function handleNextIndexLogic(gameState, playerIds, roomid, socket) {
-    if (gameState.gameState.currentCountryIndex < 9) {
+    //changevar
+    if (gameState.gameState.currentCountryIndex < 3) {
       gameState.gameState.currentCountryIndex++;
       for (const socketId of playerIds) {
         io.to(socketId).emit("gameState", gameState);
