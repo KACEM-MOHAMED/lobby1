@@ -2030,56 +2030,6 @@
     ]
   },
   {
-    "country": "india",
-    "hints": [
-      {
-        "text": "IN Eastern Africa",
-        "type": "text"
-      },
-      {
-        "text": "Languages: English",
-        "type": "text"
-      },
-      {
-        "svg": "https://flagcdn.com/io.svg",
-        "type": "show flag"
-      },
-      {
-        "text": "Currency: United States dollar ($)",
-        "type": "text"
-      },
-      {
-        "text": "Capital City is Diego Garcia",
-        "type": "text"
-      },
-      {
-        "text": "Letter revealed!\nI",
-        "type": "reveal letter",
-        "revealedIndex": 0
-      },
-      {
-        "text": "Letter revealed!\nN",
-        "type": "reveal letter",
-        "revealedIndex": 1
-      },
-      {
-        "text": "Letter revealed!\nD",
-        "type": "reveal letter",
-        "revealedIndex": 2
-      },
-      {
-        "text": "Letter revealed!\nI",
-        "type": "reveal letter",
-        "revealedIndex": 3
-      },
-      {
-        "text": "Letter revealed!\nA",
-        "type": "reveal letter",
-        "revealedIndex": 4
-      }
-    ]
-  },
-  {
     "country": "russia",
     "hints": [
       {
