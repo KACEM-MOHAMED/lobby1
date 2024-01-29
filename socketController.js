@@ -3,7 +3,7 @@ const fs = require("fs");
 let connectedPlayers = {};
 let rooms = {};
 let games = {};
-const countryCount = 2;
+const countryCount = 4;
 
 function setupSocket(io) {
   io.on("connection", (socket) => {
@@ -53,6 +53,7 @@ function setupSocket(io) {
         size: size,
         isFull: false,
         state: "waiting",
+        lastResult: null,
       };
       const newGame = { isReady: false };
       rooms[socket.id] = newRoom;
@@ -274,6 +275,32 @@ function setupSocket(io) {
       }
       io.emit("roomDetails", rooms[roomid]);
     });
+
+    socket.on("rematch", ({ roomid }) => {
+      const room = rooms[roomid];
+      if (room) {
+        // Find the player by playerid
+        const player = room.players.find(
+          (player) => player.playerid === socket.id
+        );
+        // Check if the player exists
+        if (player) {
+          // Set the isReady state of the player to true
+          player.isReady = true;
+          io.emit(
+            "RoomChat",
+            {
+              sender: "Server",
+              message: `${player.playerName} wants a Rematch!`,
+              date: new Date(),
+            },
+            roomid
+          );
+        }
+      }
+      io.emit("roomDetails", rooms[roomid]);
+    });
+
     socket.on("startGame", ({ roomid }) => {
       const room = rooms[roomid];
       if (room && room.host === socket.id) {
@@ -295,7 +322,6 @@ function setupSocket(io) {
             currentCountryIndex: 0,
             scores: {},
           },
-          timer: 10,
           isTimeoutProcessing: false,
         };
         for (let player of room.players) {
@@ -313,11 +339,11 @@ function setupSocket(io) {
       socket.emit("gameState", gameState);
     });
 
-    socket.on("correctGuess", (roomid) => {
+    socket.on("correctGuess", (roomid, bonus) => {
       const gameState = games[roomid];
       console.log(gameState);
       console.log("**********************************");
-      gameState.gameState.scores[socket.id] += 10;
+      gameState.gameState.scores[socket.id] += 50 + bonus;
       gameStateScores = gameState.gameState.scores;
       const playerIds = Object.keys(gameStateScores);
       handleNextIndexLogic(gameState, playerIds, roomid, socket);
@@ -387,9 +413,6 @@ function setupSocket(io) {
       console.log("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
       console.log(result);
       gameState.gameInProgress = false;
-      for (const socketId of playerIds) {
-        io.to(socketId).emit("gameResult", result);
-      }
       if (result.type === "win") {
         if (playerIds.length === 2) {
           for (const socketId of playerIds) {
@@ -429,12 +452,20 @@ function setupSocket(io) {
             });
         }
       }
-      //delete room and game here
+      //after game ends unready all players
+      //room.state=wainting
       if (games && games[roomid]) {
         delete games[roomid];
       }
       if (rooms && rooms[roomid]) {
-        delete rooms[roomid];
+        rooms[roomid].players.forEach((player) => {
+          player.isReady = false;
+        });
+        rooms[roomid].state = "waiting";
+        for (const socketId of playerIds) {
+          io.to(socketId).emit("roomDetails", rooms[roomid]);
+          io.to(socketId).emit("gameResult", result);
+        }
         io.emit("rooms", Object.values(rooms));
       }
     }
@@ -486,7 +517,7 @@ function getCountriesData() {
   // An array to store the selected countries data
   const countriesData = [];
   // A loop to select 10 countries
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < countryCount + 1; i++) {
     // Get a random index
     let index = getRandomInt(data.length);
     // Check if the country at that index is already selected
