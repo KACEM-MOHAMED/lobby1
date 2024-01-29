@@ -3,7 +3,7 @@ const fs = require("fs");
 let connectedPlayers = {};
 let rooms = {};
 let games = {};
-const countryCount = 1;
+const countryCount = 2;
 
 function setupSocket(io) {
   io.on("connection", (socket) => {
@@ -95,8 +95,6 @@ function setupSocket(io) {
         // Assign the result to the original rooms object
         rooms = updatedRooms;
         updateRoomIsFull(roomid);
-        // Log the updated rooms object
-        console.log(rooms);
         const roomDetails = rooms[roomid];
         // Emit the roomDetails back to the client
         io.emit("roomDetails", roomDetails);
@@ -163,7 +161,6 @@ function setupSocket(io) {
           }
         }
         io.emit("roomDetails", rooms[roomid]);
-        console.log(rooms[roomid]);
       }
 
       // Emit the roomDetails back to the clients
@@ -241,7 +238,6 @@ function setupSocket(io) {
         io.emit("roomDetails", rooms[roomId]);
       }
       // Broadcast the updated list of rooms to all clients
-      console.log(rooms);
       io.emit("rooms", Object.values(rooms));
     });
 
@@ -308,7 +304,6 @@ function setupSocket(io) {
         console.log("*****Game Object******");
         console.dir(games[roomid], { depth: null, colors: true });
       }
-      console.log(rooms[roomid]);
       io.emit("roomDetails", rooms[roomid]);
       io.emit("rooms", Object.values(rooms));
     });
@@ -436,11 +431,11 @@ function setupSocket(io) {
       }
       //delete room and game here
       if (games && games[roomid]) {
-       delete games[roomid];
+        delete games[roomid];
       }
       if (rooms && rooms[roomid]) {
         delete rooms[roomid];
-        //io.emit("rooms", Object.values(rooms));
+        io.emit("rooms", Object.values(rooms));
       }
     }
   }
@@ -452,7 +447,6 @@ function isValidUsername(username) {
 }
 
 function updateRoomIsFull(roomId) {
-  console.log("here");
   const originalRoom = rooms[roomId];
   if (originalRoom) {
     // Create a shallow copy of the room object
@@ -461,7 +455,6 @@ function updateRoomIsFull(roomId) {
     room.isFull = room.players.length >= room.size;
     // Update the original room in the rooms collection
     rooms[roomId] = room;
-    console.log(room);
   } else {
     console.error("Room not found!");
   }
