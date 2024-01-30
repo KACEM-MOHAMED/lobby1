@@ -619,7 +619,11 @@ const saveChatMessage = async (msg, socket) => {
 
 const saveUserConnection = (username, socket) => {
   try {
-    const ipAddress = socket.handshake["x-forwarded-for"];
+    let ipAddress = "notfound";
+    try {
+      ipAddress = socket.handshake.headers["x-forwarded-for"];
+    } catch (e) {}
+
     const connectionDate = new Date();
     const userConnection = new UserConnection({
       username,
@@ -634,5 +638,4 @@ const saveUserConnection = (username, socket) => {
     console.error("Error saving user connection:", error);
   }
 };
-
 module.exports = { setupSocket };
