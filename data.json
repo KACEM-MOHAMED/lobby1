@@ -1567,19 +1567,19 @@
         "type": "text"
       },
       {
-        "text": "Languages: Portuguese, Chinese",
+        "text": "Languages: Chinese",
         "type": "text"
       },
       {
-        "svg": "https://flagcdn.com/mo.svg",
+        "svg": "https://flagcdn.com/cn.svg",
         "type": "show flag"
       },
       {
-        "text": "Population: 649342",
+        "text": "Population: 	1425671352",
         "type": "text"
       },
       {
-        "text": "Capital City is ",
+        "text": "Capital City is Beijing",
         "type": "text"
       },
       {
@@ -5368,23 +5368,23 @@
     "country": "India",
     "hints": [
       {
-        "text": "IN Eastern Africa",
+        "text": "IN ASIA",
         "type": "text"
       },
       {
-        "text": "Languages: English",
+        "text": "Languages: HINDI",
         "type": "text"
       },
       {
-        "svg": "https://flagcdn.com/io.svg",
+        "svg": "https://flagcdn.com/in.svg",
         "type": "show flag"
       },
       {
-        "text": "Population: 3000",
+        "text": "Population: 1441719852",
         "type": "text"
       },
       {
-        "text": "Capital City is Diego Garcia",
+        "text": "Capital City is New Delhi",
         "type": "text"
       },
       {
