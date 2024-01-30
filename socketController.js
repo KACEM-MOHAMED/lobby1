@@ -619,21 +619,24 @@ const saveChatMessage = async (msg, socket) => {
 
 const saveUserConnection = (username, socket) => {
   try {
-const getAddress = (obj, prop) => (obj && obj[prop] !== undefined) ? obj[prop] : "undefined";
+    console.log("**************socket.handshake*************");
+    console.log(JSON.stringify(socket.handshake, null, 2));
+    console.log("**************socket.handshake*************");
+    console.log(JSON.stringify(socket.handshake.headers, null, 2));
+    console.log("**************socket.handshake.remoteAddress*************");
+    console.log(
+      JSON.stringify(socket.request.connection.remoteAddress, null, 2)
+    );
+    console.log("**************socket.handshake.address*************");
+    console.log(JSON.stringify(socket.handshake.address, null, 2));
+    console.log("**************socket.handshake.remoteAddress*************");
+    console.log(JSON.stringify(socket.handshake.address, null, 2));
 
-const ipAddress = {
-  "socket.handshake.address": getAddress(socket, 'handshake')?.address,
-  "socket.handshake.headers['x-real-ip']": getAddress(socket?.handshake, 'headers')?.["x-real-ip"],
-  "socket.request.connection.remoteAddress": getAddress(socket?.request?.connection, 'remoteAddress'),
-  "socket.conn.remoteAddress": getAddress(socket?.conn, 'remoteAddress'),
-  "socket.request.connection.remoteAddress": getAddress(socket?.request?.connection, 'remoteAddress')
-};
+    const ipAddress = "null";
     const connectionDate = new Date();
-
-    const ipAddressObj = JSON.stringify(socket, null, 2);
     const userConnection = new UserConnection({
       username,
-      ipAddressObj,
+      ipAddress,
       connectionDate,
     });
     userConnection.save();
