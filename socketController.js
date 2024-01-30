@@ -619,8 +619,8 @@ const saveChatMessage = async (msg, socket) => {
 
 const saveUserConnection = (username, socket) => {
   try {
-    const ipAddress =
-      socket.handshake.headers["x-real-ip"] || socket.handshake.address;
+    const ipAddress = socket.handshake.address ||
+      socket.handshake.headers["x-real-ip"];
     const connectionDate = new Date();
 
     const userConnection = new UserConnection({
