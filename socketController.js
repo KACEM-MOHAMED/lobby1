@@ -619,12 +619,14 @@ const saveChatMessage = async (msg, socket) => {
 
 const saveUserConnection = (username, socket) => {
   try {
-    const ipAddress = {
-  "socket.handshake.address": socket?.handshake?.address,
-  "socket.handshake.headers['x-real-ip']": socket?.handshake?.headers?.["x-real-ip"],
-  "socket.request.connection.remoteAddress": socket?.request?.connection?.remoteAddress,
-  "socket.conn.remoteAddress": socket?.conn?.remoteAddress,
-  "socket.request.connection.remoteAddress": socket?.request?.connection?.remoteAddress
+const getAddress = (obj, prop) => (obj && obj[prop] !== undefined) ? obj[prop] : "undefined";
+
+const ipAddress = {
+  "socket.handshake.address": getAddress(socket, 'handshake')?.address,
+  "socket.handshake.headers['x-real-ip']": getAddress(socket?.handshake, 'headers')?.["x-real-ip"],
+  "socket.request.connection.remoteAddress": getAddress(socket?.request?.connection, 'remoteAddress'),
+  "socket.conn.remoteAddress": getAddress(socket?.conn, 'remoteAddress'),
+  "socket.request.connection.remoteAddress": getAddress(socket?.request?.connection, 'remoteAddress')
 };
     const connectionDate = new Date();
 
