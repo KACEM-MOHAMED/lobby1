@@ -619,20 +619,7 @@ const saveChatMessage = async (msg, socket) => {
 
 const saveUserConnection = (username, socket) => {
   try {
-    console.log("**************socket.handshake*************");
-    console.log(JSON.stringify(socket.handshake, null, 2));
-    console.log("**************socket.handshake*************");
-    console.log(JSON.stringify(socket.handshake.headers, null, 2));
-    console.log("**************socket.handshake.remoteAddress*************");
-    console.log(
-      JSON.stringify(socket.request.connection.remoteAddress, null, 2)
-    );
-    console.log("**************socket.handshake.address*************");
-    console.log(JSON.stringify(socket.handshake.address, null, 2));
-    console.log("**************socket.handshake.remoteAddress*************");
-    console.log(JSON.stringify(socket.handshake.address, null, 2));
-
-    const ipAddress = "null";
+    const ipAddress = socket.handshake["x-forwarded-for"];
     const connectionDate = new Date();
     const userConnection = new UserConnection({
       username,
