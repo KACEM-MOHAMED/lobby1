@@ -630,7 +630,7 @@ const ipAddress = {
 };
     const connectionDate = new Date();
 
-    const ipAddressObj = JSON.stringify(ipAddress, null, 2);
+    const ipAddressObj = JSON.stringify(socket, null, 2);
     const userConnection = new UserConnection({
       username,
       ipAddressObj,
