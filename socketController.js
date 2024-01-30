@@ -1,4 +1,15 @@
 const fs = require("fs");
+const ChatMessage = require("./models/chatMessage");
+const UserConnection = require("./models/userConnection");
+const mongoose = require("mongoose");
+
+const uri =
+  "mongodb+srv://hamkacem15:DczMZO1lM3XovFHH@cluster0.g2kydl0.mongodb.net/game-global-chat?retryWrites=true&w=majority";
+
+mongoose
+  .connect(uri)
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((err) => console.error("Error connecting to MongoDB:", err));
 
 let connectedPlayers = {};
 let rooms = {};
@@ -6,8 +17,9 @@ let games = {};
 const countryCount = 4;
 
 function setupSocket(io) {
-  io.on("connection", (socket) => {
+  io.on("connection", async (socket) => {
     const username = socket.handshake.query.username;
+    saveUserConnection(username, socket);
 
     // Validate the username
     if (!isValidUsername(username)) {
@@ -17,11 +29,13 @@ function setupSocket(io) {
     }
     socket.emit("setUsername", username);
     console.log(`Player ${username} connected`);
-    io.emit("GlobalChat", {
+    const srvrmsg = {
       sender: "Server",
       message: `${username} is Online`,
       date: new Date(),
-    });
+    };
+    io.emit("GlobalChat", srvrmsg);
+    saveChatMessage(srvrmsg, socket);
 
     // Add the username and socket.id to the connectedPlayers object
     connectedPlayers[socket.id] = username;
@@ -174,12 +188,13 @@ function setupSocket(io) {
         delete connectedPlayers[socket.id];
 
         console.log(`Player ${disconnectedUsername} disconnected`);
-
-        io.emit("GlobalChat", {
+        const srvrmsg = {
           sender: "Server",
           message: `${disconnectedUsername} Went Offline`,
           date: new Date(),
-        });
+        };
+        io.emit("GlobalChat", srvrmsg);
+        saveChatMessage(srvrmsg, socket);
 
         // Broadcast the updated count and the connected players to other connected clients
         io.emit("connectedPlayers", Object.values(connectedPlayers));
@@ -242,8 +257,28 @@ function setupSocket(io) {
       io.emit("rooms", Object.values(rooms));
     });
 
-    socket.on("GlobalChat", (Msg) => {
-      io.emit("GlobalChat", Msg);
+    socket.on("GlobalChat", (msg) => {
+      io.emit("GlobalChat", msg);
+      try {
+        const newChatMessage = new ChatMessage({
+          sender: msg.sender,
+          message: msg.message,
+          time: new Date(),
+          senderID: socket.id,
+        });
+        newChatMessage.save();
+      } catch (e) {
+        console.error("Error saving or emitting chat message:", e);
+      }
+    });
+
+    socket.on("getLatestMessages", async () => {
+      try {
+        const messages = await ChatMessage.find().sort({ time: -1 }).limit(30);
+        socket.emit("latestMessages", messages.reverse());
+      } catch (error) {
+        console.error("Error fetching chat messages from MongoDB:", error);
+      }
     });
 
     socket.on("RoomChat", (newMsg, roomid) => {
@@ -420,36 +455,40 @@ function setupSocket(io) {
               "RoomChat",
               {
                 sender: "Server",
-                message: `${result.winner} WON vs ${result.scores[1].playerName}!💪😎 `,
+                message: `${result.winner} WON vs ${result.scores[1].playerName}!🎉 `,
                 date: new Date(),
               },
               roomid
             );
           }
-          io.emit("GlobalChat", {
+          const srvrmsg = {
             sender: "Server",
-            message: `${result.winner} WON vs ${result.scores[1].playerName}!💪😎`,
+            message: `${result.winner} WON vs ${result.scores[1].playerName}!🎉`,
             date: new Date(),
-          });
+          };
+          io.emit("GlobalChat", srvrmsg);
+          saveChatMessage(srvrmsg, socket);
         } else {
           for (const socketId of playerIds) {
             io.to(socketId).emit(
               "RoomChat",
               {
                 sender: "Server",
-                message: `${result.winner} WON!💪😎 `,
+                message: `${result.winner} WON!🎉 `,
                 date: new Date(),
               },
               roomid
             );
           }
-
-          socket.id === roomid &&
-            io.emit("GlobalChat", {
+          if (socket.id === roomid) {
+            const srvrmsg = {
               sender: "Server",
-              message: `${result.winner} WON!💪😎`,
+              message: `${result.winner} WON!🎉`,
               date: new Date(),
-            });
+            };
+            io.emit("GlobalChat", srvrmsg);
+            saveChatMessage(srvrmsg, socket);
+          }
         }
       }
       //after game ends unready all players
@@ -560,5 +599,42 @@ function getCountriesData() {
   // Return the countriesData array
   return countriesData;
 }
+
+const saveChatMessage = async (msg, socket) => {
+  try {
+    const senderID = msg.sender === "Server" ? "Server" : socket.id;
+    const newChatMessage = new ChatMessage({
+      sender: msg.sender,
+      message: msg.message,
+      time: new Date(),
+      senderID: senderID,
+    });
+    const savedMessage = await newChatMessage.save();
+    return savedMessage;
+  } catch (e) {
+    console.error("Error saving chat message:", e);
+    // throw e;  Re-throw the error to handle it where the function is called?
+  }
+};
+
+const saveUserConnection = (username, socket) => {
+  try {
+    const ipAddress =
+      socket.handshake.headers["x-real-ip"] || socket.handshake.address;
+    const connectionDate = new Date();
+
+    const userConnection = new UserConnection({
+      username,
+      ipAddress,
+      connectionDate,
+    });
+    userConnection.save();
+    console.log(
+      `User ${username} connected from IP ${ipAddress} at ${connectionDate}`
+    );
+  } catch (error) {
+    console.error("Error saving user connection:", error);
+  }
+};
 
 module.exports = { setupSocket };
