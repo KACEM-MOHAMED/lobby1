@@ -7,7 +7,7 @@ const userConnectionSchema = new mongoose.Schema({
   },
   ipAddress: {
     type: String,
-    required: true,
+    required: false,
   },
   connectionDate: {
     type: Date,
