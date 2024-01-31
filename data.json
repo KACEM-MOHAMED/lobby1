@@ -2508,23 +2508,23 @@
     "country": "Iran",
     "hints": [
       {
-        "text": "IN Polynesia",
+        "text": "IN West Asia",
         "type": "text"
       },
       {
-        "text": "Languages: English, Cook Islands M\u0101ori",
+        "text": "Languages: Persian, Azerbaijani",
         "type": "text"
       },
       {
-        "svg": "https://flagcdn.com/ck.svg",
+        "svg": "https://flagcdn.com/ir.svg",
         "type": "show flag"
       },
       {
-        "text": "Population: 18100",
+        "text": "Population: 89537969",
         "type": "text"
       },
       {
-        "text": "Capital City is Avarua",
+        "text": "Capital City is Tehran",
         "type": "text"
       },
       {
@@ -9131,141 +9131,6 @@
         "text": "Letter revealed!\nE",
         "type": "reveal letter",
         "revealedIndex": 5
-      }
-    ]
-  },
-  {
-    "country": "Israel",
-    "hints": [
-      {
-        "text": "IN Western Asia",
-        "type": "text"
-      },
-      {
-        "text": "Languages: Arabic, Hebrew",
-        "type": "text"
-      },
-      {
-        "svg": "https://flagcdn.com/il.svg",
-        "type": "show flag"
-      },
-      {
-        "text": "Population: 9216900",
-        "type": "text"
-      },
-      {
-        "text": "Capital City is Jerusalem",
-        "type": "text"
-      },
-      {
-        "text": "Letter revealed!\nI",
-        "type": "reveal letter",
-        "revealedIndex": 0
-      },
-      {
-        "text": "Letter revealed!\nS",
-        "type": "reveal letter",
-        "revealedIndex": 1
-      },
-      {
-        "text": "Letter revealed!\nR",
-        "type": "reveal letter",
-        "revealedIndex": 2
-      },
-      {
-        "text": "Letter revealed!\nA",
-        "type": "reveal letter",
-        "revealedIndex": 3
-      },
-      {
-        "text": "Letter revealed!\nE",
-        "type": "reveal letter",
-        "revealedIndex": 4
-      },
-      {
-        "text": "Letter revealed!\nL",
-        "type": "reveal letter",
-        "revealedIndex": 5
-      }
-    ]
-  },
-  {
-    "country": "Saint Martin",
-    "hints": [
-      {
-        "text": "IN Caribbean",
-        "type": "text"
-      },
-      {
-        "text": "Languages: French",
-        "type": "text"
-      },
-      {
-        "svg": "https://flagcdn.com/mf.svg",
-        "type": "show flag"
-      },
-      {
-        "text": "Population: 38659",
-        "type": "text"
-      },
-      {
-        "text": "Capital City is Marigot",
-        "type": "text"
-      },
-      {
-        "text": "Letter revealed!\nS",
-        "type": "reveal letter",
-        "revealedIndex": 0
-      },
-      {
-        "text": "Letter revealed!\nA",
-        "type": "reveal letter",
-        "revealedIndex": 1
-      },
-      {
-        "text": "Letter revealed!\nI",
-        "type": "reveal letter",
-        "revealedIndex": 2
-      },
-      {
-        "text": "Letter revealed!\nN",
-        "type": "reveal letter",
-        "revealedIndex": 3
-      },
-      {
-        "text": "Letter revealed!\nT",
-        "type": "reveal letter",
-        "revealedIndex": 4
-      },
-      {
-        "text": "Letter revealed!\nM",
-        "type": "reveal letter",
-        "revealedIndex": 6
-      },
-      {
-        "text": "Letter revealed!\nA",
-        "type": "reveal letter",
-        "revealedIndex": 7
-      },
-      {
-        "text": "Letter revealed!\nR",
-        "type": "reveal letter",
-        "revealedIndex": 8
-      },
-      {
-        "text": "Letter revealed!\nT",
-        "type": "reveal letter",
-        "revealedIndex": 9
-      },
-      {
-        "text": "Letter revealed!\nI",
-        "type": "reveal letter",
-        "revealedIndex": 10
-      },
-      {
-        "text": "Letter revealed!\nN",
-        "type": "reveal letter",
-        "revealedIndex": 11
       }
     ]
   },
