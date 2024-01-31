@@ -5,7 +5,6 @@ const chatMessageSchema = new mongoose.Schema({
   message: String,
   time: { type: Date, default: Date.now },
   senderID: String,
-  room: String
 });
 
 const ChatMessage = mongoose.model("ChatMessage", chatMessageSchema);

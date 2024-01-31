@@ -1,5 +1,6 @@
 const fs = require("fs");
 const ChatMessage = require("./models/chatMessage");
+const ChatMessage = require("./models/roomMessage");
 const UserConnection = require("./models/userConnection");
 const mongoose = require("mongoose");
 
@@ -285,7 +286,7 @@ function setupSocket(io) {
     socket.on("RoomChat", (newMsg, roomid) => {
       console.log("Recieved " + newMsg.message + " In room " + roomid);
       io.emit("RoomChat", newMsg, roomid);
-      saveChatMessage(srvrmsg, socket, rooms[room.id]);
+      saveRoomMessage(srvrmsg, socket, rooms[roomid].roomName);
     });
 
     socket.on("readyUp", ({ roomid }) => {
@@ -619,7 +620,7 @@ const saveChatMessage = async (msg, socket) => {
   }
 };
 
-const saveRoomChatMessage = async (msg, socket, room) => {
+const saveRoomMessage = async (msg, socket, roomName) => {
   try {
     const senderID = msg.sender === "Server" ? "Server" : socket.id;
     const newChatMessage = new ChatMessage({
@@ -627,7 +628,7 @@ const saveRoomChatMessage = async (msg, socket, room) => {
       message: msg.message,
       time: new Date(),
       senderID: senderID,
-      room: room.roomName
+      room: roomName
     });
     const savedMessage = await newChatMessage.save();
     return savedMessage;
