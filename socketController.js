@@ -1,6 +1,6 @@
 const fs = require("fs");
 const ChatMessage = require("./models/chatMessage");
-const ChatMessage = require("./models/roomMessage");
+const RoomMessage = require("./models/roomMessage");
 const UserConnection = require("./models/userConnection");
 const mongoose = require("mongoose");
 
@@ -80,7 +80,6 @@ function setupSocket(io) {
         { sender: "Server", message: `Room Created`, date: new Date() },
         socket.id
       );
-      saveRoomChatMessage
     });
 
     socket.on("getRoomDetails", ({ roomid }) => {
@@ -623,14 +622,14 @@ const saveChatMessage = async (msg, socket) => {
 const saveRoomMessage = async (msg, socket, roomName) => {
   try {
     const senderID = msg.sender === "Server" ? "Server" : socket.id;
-    const newChatMessage = new ChatMessage({
+    const newRoomMessage = new RoomMessage({
       sender: msg.sender,
       message: msg.message,
       time: new Date(),
       senderID: senderID,
       room: roomName
     });
-    const savedMessage = await newChatMessage.save();
+    const savedMessage = await newRoomMessage.save();
     return savedMessage;
   } catch (e) {
     console.error("Error saving chat message:", e);
