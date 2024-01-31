@@ -79,6 +79,7 @@ function setupSocket(io) {
         { sender: "Server", message: `Room Created`, date: new Date() },
         socket.id
       );
+      saveRoomChatMessage
     });
 
     socket.on("getRoomDetails", ({ roomid }) => {
@@ -284,6 +285,7 @@ function setupSocket(io) {
     socket.on("RoomChat", (newMsg, roomid) => {
       console.log("Recieved " + newMsg.message + " In room " + roomid);
       io.emit("RoomChat", newMsg, roomid);
+      saveChatMessage(srvrmsg, socket, rooms[room.id]);
     });
 
     socket.on("readyUp", ({ roomid }) => {
@@ -617,6 +619,24 @@ const saveChatMessage = async (msg, socket) => {
   }
 };
 
+const saveRoomChatMessage = async (msg, socket, room) => {
+  try {
+    const senderID = msg.sender === "Server" ? "Server" : socket.id;
+    const newChatMessage = new ChatMessage({
+      sender: msg.sender,
+      message: msg.message,
+      time: new Date(),
+      senderID: senderID,
+      room: room.roomName
+    });
+    const savedMessage = await newChatMessage.save();
+    return savedMessage;
+  } catch (e) {
+    console.error("Error saving chat message:", e);
+    // throw e;  Re-throw the error to handle it where the function is called?
+  }
+};
+
 const saveUserConnection = (username, socket) => {
   try {
     let ipAddress = "notfound";
@@ -638,4 +658,5 @@ const saveUserConnection = (username, socket) => {
     console.error("Error saving user connection:", error);
   }
 };
+
 module.exports = { setupSocket };
