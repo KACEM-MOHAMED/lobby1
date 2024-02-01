@@ -285,7 +285,7 @@ function setupSocket(io) {
     socket.on("RoomChat", (newMsg, roomid) => {
       console.log("Recieved " + newMsg.message + " In room " + roomid);
       io.emit("RoomChat", newMsg, roomid);
-      saveRoomMessage(srvrmsg, socket, rooms[roomid].roomName);
+      saveRoomMessage(newMsg, socket, rooms[roomid].roomName);
     });
 
     socket.on("readyUp", ({ roomid }) => {
