@@ -19,15 +19,16 @@ const countryCount = 4;
 
 function setupSocket(io) {
   io.on("connection", async (socket) => {
-    const username = socket.handshake.query.username;
+    let username = socket.handshake.query.username;
     saveUserConnection(username, socket);
-
+    
     // Validate the username
     if (!isValidUsername(username)) {
       console.error(`Invalid username: ${username}`);
       socket.disconnect(true); // Disconnect the socket
       return;
     }
+    username = avoidDuplicateUsernames(username);
     socket.emit("setUsername", username);
     console.log(`Player ${username} connected`);
     const srvrmsg = {
@@ -662,5 +663,27 @@ const saveUserConnection = (username, socket) => {
     console.error("Error saving user connection:", error);
   }
 };
+
+function avoidDuplicateUsernames(username) {
+  let originalUsername = username;
+
+  // Check if the original username is not a duplicate
+  if (!Object.values(connectedPlayers).includes(originalUsername)) {
+    return originalUsername;
+  }
+
+  // If the original username is a duplicate, keep appending random numbers until it's unique
+  while (true) {
+    const randomSuffix = Math.floor(Math.random() * 100)
+      .toString()
+      .padStart(2, "0");
+    const newUsername = originalUsername + randomSuffix;
+
+    // Check if the new username is unique
+    if (!Object.values(connectedPlayers).includes(newUsername)) {
+      return newUsername;
+    }
+  }
+}
 
 module.exports = { setupSocket };
