@@ -371,6 +371,10 @@ function setupSocket(io) {
       io.emit("rooms", Object.values(rooms));
     });
 
+    socket.on("SinglePlayer", () => {
+      socket.emit("SinglePlayer", getCountriesData());
+    });
+
     socket.on("gameState", (roomid) => {
       const gameState = games[roomid];
       socket.emit("gameState", gameState);
