@@ -5,7 +5,7 @@ const UserConnection = require("./models/userConnection");
 const mongoose = require("mongoose");
 
 const uri =
-  "mongodb+srv://hamkacem15:DczMZO1lM3XovFHH@cluster0.g2kydl0.mongodb.net/game-global-chat?retryWrites=true&w=majority";
+  "mongodb+srv://hamkacem15:<db_password>@cluster0.g2kydl0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(uri)
